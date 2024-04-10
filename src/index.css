@@ -1,3 +1,73 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html,
+body {
+  position: relative;
+  /* height: 100%; */
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  /* height: 100%; */
+}
+
+.swiper-slide{
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  /* height: 100vh; */
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-1{
+    background: url('../public/slider-1.jpg')  no-repeat center;
+    background-size: cover;
+    height: 600px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: start !important;
+    text-align: left;
+    padding: 30px;
+}
+.slider-2{
+    background: url('../public/slider-2.jpg')  no-repeat center;
+    background-size: cover;
+    height: 600px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: start !important;
+    text-align: left;
+    padding: 30px;
+}
+.slider-3{
+    background: url('../public/slider-3.jpg')  no-repeat center;
+    background-size: cover;
+    height: 600px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: start !important;
+    text-align: left;
+    padding: 30px;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

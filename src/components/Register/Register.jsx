@@ -1,10 +1,15 @@
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../AuthProvider/AuthProvider";
-import { useContext } from "react";
-import { Link } from "react-router-dom";
-
+import { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { IoEye } from "react-icons/io5";
+import { IoMdEyeOff } from "react-icons/io";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Register = () => {
-    const {createUser,updateUserProfile,user} =  useContext(AuthContext);
+    const {createUser,updateUserProfile,logOut,user} =  useContext(AuthContext);
+    const [show,setShow] = useState(false);
+    const navigate = useNavigate();
     console.log(user);
     const {
         register,
@@ -16,8 +21,11 @@ const Register = () => {
         const {name,email,password,imgUrl} = data;
         createUser(email,password)
         .then(() => {
+            toast('Successfully Registered');
             updateUserProfile(name,imgUrl)
             .then(() => {
+                logOut();
+                navigate('/login');
                 
             })
 
@@ -66,15 +74,25 @@ const Register = () => {
                         <label className="label">
                             <span className="label-text">Password</span>
                         </label>
-                        <input type="password" name="password" placeholder="password" className="input input-bordered" {...register("password",  
+                        <div className="relative">
+                        <input type={show ? 'text' : "password"} name="password" placeholder="password" className="input w-full input-bordered" {...register("password",  
                         {required: true,pattern:/^(?=.*[a-z])(?=.*[A-Z]){6}.{6,15}$/})}/>
-                        {errors.password && <span className="text-red-500">Must have an Uppercase & Lowercase letter & must be altleast 6 characters</span>}
+                        <span onClick={() => setShow(!show)} className="absolute top-4 right-3">
+                            {
+                                show ? 
+                                <IoMdEyeOff className="text-lg"></IoMdEyeOff> : 
+                                <IoEye className="text-lg"></IoEye>
+                            }
+                            </span>
+                        {errors.password && <p className="text-red-500">Must have an Uppercase & Lowercase letter & must be altleast 6 characters</p>}
+                        </div>
                         </div>
                         <div className="form-control mt-6">
                         <button className="btn btn-primary">Register</button>
                         </div>
                     <p>Already have an account? <Link className="text-blue-600" to="/login">Login</Link></p>
                     </form>
+                    <ToastContainer></ToastContainer>
                     </div>
                 </div>
             </div>
