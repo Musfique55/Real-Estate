@@ -1,0 +1,26 @@
+[
+    {
+        "name" : "Harry White",
+        "image" : "https://i.postimg.cc/6QTB4dNv/staff1-pgnhj7pzods38uvraxbywe4xh8122i8bmpkmugccpw.jpg"
+    },
+    {
+        "name": "Lilianna Willis",
+        "image": "https://i.postimg.cc/rsLfMkCw/staff2-pgnhuc58jt08mqq4cqf1el3ajd7f5kdz5rhhabun38.jpg"
+    },
+    {
+        "name": "Steve Weeks",
+        "image": "https://i.postimg.cc/Ss49KN53/staff3-pgnhuiq3vn98w0gkab9fe1fip2azng43io1vn9kvvo.jpg" 
+    },
+    {
+        "name" : "Erin Robertson",
+        "image" : "https://i.postimg.cc/2SFrDkQV/staff6-pgnhv83r067zlhfp648crd0yqgtwf9wum5nzlqj97o.jpg"
+    },
+    {
+        "name" : "Tony Good",
+        "image" : "https://i.postimg.cc/L5n89cHG/staff5-pgnhv1ivobyzc7p98jdyrwoqkrqbxe6q993l8st0f8.jpg"
+    },
+    {
+        "name": "Sara Harrison",
+        "image"  : "https://i.postimg.cc/3w18g8NP/staff4-pgnhuvvujbr9ejxg5gy7cy3z0gi4n7kc8h6od51dgk.jpg"
+    }
+]
