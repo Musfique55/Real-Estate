@@ -12,7 +12,7 @@ const Header = () => {
       profile.classList.add('hidden');
     }
     return (
-        <div className='mx-12'>
+        <div className='mx-12 py-7'>
             <div className="flex justify-between items-center ">
                 <div>
                     <a className="btn btn-ghost text-xl">Axel Estate</a>

@@ -38,6 +38,16 @@ const Login = () => {
         })
     }
         
+    const handleGithubLogin = () => {
+        githubLogin()
+        .then(() => {
+            toast.success('Logged in Successfully');
+            navigate(location?.state ? location.state : '/');
+        })
+        .catch(error => {
+            toast.error(error);
+        })
+    }
     return (
         <div>
             <div className="hero min-h-screen bg-base-200">
@@ -75,7 +85,7 @@ const Login = () => {
                                 <FaGoogle className="text-blue-500"></FaGoogle>
                                 Login With Google
                             </button>
-                            <button onClick={githubLogin} className="btn w-full bg-transparent border-black mt-3">
+                            <button onClick={handleGithubLogin} className="btn w-full bg-transparent border-black mt-3">
                                 <FaGithub></FaGithub>
                                 Login With Github
                             </button>

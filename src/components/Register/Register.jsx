@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Register = () => {
     const {createUser,updateUserProfile,logOut,user} =  useContext(AuthContext);
     const [show,setShow] = useState(false);
+    const [error,setError] = useState(null);
     const navigate = useNavigate();
     console.log(user);
     const {
@@ -31,7 +32,7 @@ const Register = () => {
 
           })
         .catch(error => {
-            console.log(error.message);
+         setError(error.message);
         })
     }
         
@@ -85,6 +86,7 @@ const Register = () => {
                             }
                             </span>
                         {errors.password && <p className="text-red-500">Must have an Uppercase & Lowercase letter & must be altleast 6 characters</p>}
+                        {error && <p className="text-red-500">{error}</p>}
                         </div>
                         </div>
                         <div className="form-control mt-6">
