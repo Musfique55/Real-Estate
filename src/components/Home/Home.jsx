@@ -35,9 +35,7 @@ const Home = () => {
             <Swiper
                 style={{
                     borderRadius : '16px'
-                    // height: '100vh'
                 }}
-                // direction={'vertical'}
                 centeredSlides={true}
                 slidesPerView={1}
                 loop={true}
@@ -49,14 +47,20 @@ const Home = () => {
                 modules={[Autoplay]}
                 className="mySwiper"
             >
-                <SwiperSlide className="slider-1 items-center justify-start first-swiper-slider">
-                        <h3 className=' text-5xl text-white'>Buying Residence for Family <br />  and Future Investment</h3>
+                <SwiperSlide className="slider-1 first-swiper-slider">
+                        <h3 className=' text-5xl text-white'>Discover the Best Properties</h3>
+                        <p className='text-white mt-5'>Discover a world of possibilities with our expert team of real estate professionals. Whether you{`'`}re buying, selling, or investing, we{`'`}re here to guide you every step of the way. Explore our vast portfolio of properties, from luxurious estates to cozy apartments, and find the perfect match for your lifestyle. With our commitment to excellence and personalized service, we{`'`}ll help you turn your real estate dreams into reality.</p>
+                        <button className='text-white font-semibold px-6 py-3 rounded-full bg-green-500 mt-5'>Get Started</button>
                 </SwiperSlide>
-                <SwiperSlide className="slider-2 flex items-center justify-center first-swiper-slider">
-                        <h3 className='text-5xl text-white'>Buying Residence for Family <br /> and Future Investment</h3>
+                <SwiperSlide className="slider-2 first-swiper-slider">
+                        <h3 className=' text-5xl text-white'>Discover the Best Properties</h3>
+                        <p className='text-white mt-5'>Discover a world of possibilities with our expert team of real estate professionals. Whether you{`'`}re buying, selling, or investing, we{`'`}re here to guide you every step of the way. Explore our vast portfolio of properties, from luxurious estates to cozy apartments, and find the perfect match for your lifestyle. With our commitment to excellence and personalized service, we{`'`}ll help you turn your real estate dreams into reality.</p>
+                        <button className='text-white font-semibold px-6 py-3 rounded-full bg-green-500 mt-5'>Get Started</button>
                 </SwiperSlide>
-                <SwiperSlide className="slider-3 flex items-center justify-center first-swiper-slider">
-                        <h3 className='text-5xl text-white'>Buying Residence for Family <br /> and Future Investment</h3>
+                <SwiperSlide className="slider-3 first-swiper-slider">
+                        <h3 className=' text-5xl text-white'>Discover the Best Properties</h3>
+                        <p className='text-white mt-5'>Discover a world of possibilities with our expert team of real estate professionals. Whether you{`'`}re buying, selling, or investing, we{`'`}re here to guide you every step of the way. Explore our vast portfolio of properties, from luxurious estates to cozy apartments, and find the perfect match for your lifestyle. With our commitment to excellence and personalized service, we{`'`}ll help you turn your real estate dreams into reality.</p>
+                        <button className='text-white font-semibold px-6 py-3 rounded-full bg-green-500 mt-5'>Get Started</button>
                 </SwiperSlide>
             </Swiper>
             </div>
