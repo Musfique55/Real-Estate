@@ -3,7 +3,6 @@ import { MdOutlineFacebook } from "react-icons/md";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 const Stuffs = ({stuff}) => {
-    console.log(stuff);
     return (
         <div className="space-y-4">
             <img src={stuff.image} alt="" className="rounded-2xl"/>

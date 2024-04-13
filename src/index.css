@@ -71,3 +71,13 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+.leaflet-container {
+  height: 600px;
+  width: 100%;
+}
+
+.leaflet-div-icon {
+  background: transparent;
+  border: none;
+}

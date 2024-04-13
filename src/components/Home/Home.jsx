@@ -10,6 +10,7 @@ import { useEffect, useState } from 'react';
 import Estatecards from '../Estatecards/Estatecards';
 import { useLoaderData } from 'react-router-dom';
 import Stuffs from '../Stuffs/Stuffs';
+import { Helmet } from 'react-helmet';
 const Home = () => {
     const [estates,setEstates] = useState([]);
     const stuffs = useLoaderData();
@@ -22,6 +23,9 @@ const Home = () => {
     },[])
     return (
         <div className='mx-12'>
+            <Helmet>
+                <title>Alex Estate | Home</title>
+            </Helmet>
             <div className='rounded-lg'>
             <Swiper
                 style={{
@@ -62,7 +66,7 @@ const Home = () => {
                 </div>
             </div>
             <div >
-                <h2 className='text-4xl font-semibold text-center mb-12'>Our Stuffs</h2>
+                <h2 className='text-4xl font-semibold text-center mb-12'>Meet Our Agents</h2>
                 <div className='grid grid-cols-3 gap-y-10'>
                 {
                     stuffs.map((stuff,idx) => {

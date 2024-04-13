@@ -6,6 +6,7 @@ import { IoEye } from "react-icons/io5";
 import { IoMdEyeOff } from "react-icons/io";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from "react-helmet";
 const Register = () => {
     const {createUser,updateUserProfile,logOut,user} =  useContext(AuthContext);
     const [show,setShow] = useState(false);
@@ -38,6 +39,9 @@ const Register = () => {
         
     return (
         <div>
+            <Helmet>
+              <title>Alex Estate | Register</title>
+            </Helmet>
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col">
                     <div className="text-center lg:text-left">

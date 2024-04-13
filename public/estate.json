@@ -9,7 +9,15 @@
       "status": "Sale",
       "area": "6000 sq ft",
       "location": "Malibu, California",
-      "facilities": ["infinity pool", "private beach access", "home theater"]
+      "latLng" : [34.0259, -118.7798] , 
+      "facilities": ["infinity pool", "private beach access", "home theater"],
+      "agent" : [
+        {
+          "agent_name": "Emily Johnson",
+          "image": "https://i.postimg.cc/6QTB4dNv/staff1-pgnhj7pzods38uvraxbywe4xh8122i8bmpkmugccpw.jpg",
+          "description": "Emily Johnson is a dynamic and results-driven real estate agent with a passion for helping her clients achieve their goals. With a keen eye for market trends and a commitment to exceptional service, Emily goes above and beyond to deliver outstanding results and exceed expectations."
+        }
+      ]    
     },
     {
       "image": "https://i.postimg.cc/761q8ytL/pexels-expect-best-323780.jpg",
@@ -21,7 +29,15 @@
       "status": "Sale",
       "area": "4000 sq ft",
       "location": "Manhattan, New York",
-      "facilities": ["rooftop terrace", "private elevator", "gourmet kitchen"]
+      "facilities": ["rooftop terrace", "private elevator", "gourmet kitchen"],
+      "latLng" : [40.7831,-73.9712],
+      "agent" : [
+        {
+          "agent_name": "John Smith",
+          "image": "https://i.postimg.cc/rsLfMkCw/staff2-pgnhuc58jt08mqq4cqf1el3ajd7f5kdz5rhhabun38.jpg",
+          "description": "With over a decade of experience in the real estate industry, John Smith is a trusted and knowledgeable agent known for his dedication to his clients. Whether you're buying, selling, or investing, John's expertise and personalized approach ensure a seamless and successful transaction every time."
+        }
+      ]    
     },
     {
       "image": "https://i.postimg.cc/y86gLLd9/pexels-ruby-ruby-14559842.jpg",
@@ -33,7 +49,15 @@
       "status": "Rent",
       "area": "10000 sq ft",
       "location": "Palm Beach, Florida",
-      "facilities": ["private dock", "infinity pool", "home gym"]
+      "facilities": ["private dock", "infinity pool", "home gym"],
+      "latLng" : [26.7056, -80.0364],
+      "agent" : [
+        {
+          "agent_name": "Michael Williams",
+          "image": "https://i.postimg.cc/Ss49KN53/staff3-pgnhuiq3vn98w0gkab9fe1fip2azng43io1vn9kvvo.jpg",
+          "description": "Michael Williams is a seasoned real estate professional with a proven track record of success. Known for his integrity, professionalism, and attention to detail, Michael is dedicated to providing his clients with the highest level of service and expertise to help them achieve their real estate goals."
+        }
+      ]    
     },
     {
       "image": "https://i.postimg.cc/5tM59BN2/pexels-chris-g-2294125.jpg",
@@ -45,7 +69,15 @@
       "status": "Sale",
       "area": "Entire Island",
       "location": "Maldives",
-      "facilities": ["private villas", "spa", "water sports"]
+      "facilities": ["private villas", "spa", "water sports"],
+      "latLng" : [3.2028,-73.2207],
+      "agent" : [{
+        "agent_name": "Jessica Martinez",
+        "image": "https://i.postimg.cc/2SFrDkQV/staff6-pgnhv83r067zlhfp648crd0yqgtwf9wum5nzlqj97o.jpg",
+        "description": "Jessica Martinez brings a fresh perspective and unmatched enthusiasm to the real estate industry. With a background in marketing and customer service, Jessica leverages her skills to deliver innovative solutions and exceptional results for her clients."
+    }
+  ]
+
     },
     {
       "image": "      https://i.postimg.cc/YCQgPvfK/pexels-asad-photo-maldives-1450363.jpg",
@@ -57,7 +89,14 @@
       "status": "Sale",
       "area": "100 acres",
       "location": "Swiss Alps",
-      "facilities": ["ski slopes", "luxury chalets", "fine dining"]
+      "facilities": ["ski slopes", "luxury chalets", "fine dining"],
+      "latLng" : [46.6056,-8.6376],
+      "agent" : [{
+        "agent_name": "Sarah Adams",
+        "image": "https://i.postimg.cc/L5n89cHG/staff5-pgnhv1ivobyzc7p98jdyrwoqkrqbxe6q993l8st0f8.jpg",
+        "description": "Sarah Adams is a highly skilled and experienced real estate professional with a passion for helping her clients find their dream homes. With a keen understanding of the local market and a commitment to excellence, Sarah provides exceptional service and support from start to finish."
+    }
+  ]
     },
     {
       "image": "https://i.postimg.cc/Qxt0vJHL/pexels-asad-photo-maldives-9482124.jpg",
@@ -69,7 +108,14 @@
       "status": "Rent",
       "area": "Entire Island",
       "location": "Caribbean",
-      "facilities": ["luxury villas", "infinity pool", "private beach"]
+      "facilities": ["luxury villas", "infinity pool", "private beach"],
+      "latLng" : [12.1165,-68.9304],
+      "agent" : [{
+        "agent_name": "David Thompson",
+        "image": "https://i.postimg.cc/3w18g8NP/staff4-pgnhuvvujbr9ejxg5gy7cy3z0gi4n7kc8h6od51dgk.jpg",
+        "description": "David Thompson is a dedicated and knowledgeable real estate agent committed to helping his clients achieve their real estate goals. With a focus on communication, honesty, and integrity, David provides personalized service and expert guidance throughout the buying or selling process."
+    }
+  ]
     }
   ]
   

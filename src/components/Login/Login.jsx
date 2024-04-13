@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
+import { Helmet } from "react-helmet";
 
 const Login = () => {
     const {loginUser,googleLogin,githubLogin} =  useContext(AuthContext);
@@ -50,6 +51,9 @@ const Login = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title>Alex Estate | Login</title>
+            </Helmet>
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col">
                     <div className="text-center lg:text-left">
