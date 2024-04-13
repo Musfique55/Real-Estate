@@ -5,12 +5,9 @@ import { useContext } from 'react';
 
 const UpdateProfile = () => {
     const {user,updateUserProfile} = useContext(AuthContext);
-    console.log(user);
     const handleSubmit = (e) => {
-        // e.preventDefault();
         const name = e.target.name.value;
         const url = e.target.photourl.value;
-        // console.log(name,url);
         updateUserProfile(name,url);
     }
     updateUserProfile()

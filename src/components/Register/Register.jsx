@@ -89,8 +89,8 @@ const Register = () => {
                                 <IoEye className="text-lg"></IoEye>
                             }
                             </span>
-                        {errors.password && <p className="text-red-500">Must have an Uppercase & Lowercase letter & must be altleast 6 characters</p>}
-                        {error && <p className="text-red-500">{error}</p>}
+                        {errors.password && toast.error('Must have an Uppercase & Lowercase letter & must be altleast 6 characters')}
+                        {error && toast(error)}
                         </div>
                         </div>
                         <div className="form-control mt-6">

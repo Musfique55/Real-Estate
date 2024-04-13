@@ -19,6 +19,11 @@ const Header = () => {
                 </div>
                 <div className="flex gap-6 items-center">
                     <NavLink className={({isActive}) => isActive ? 'text-green-500 font-semibold text-base' : 'font-medium text-base'} to='/'>Home</NavLink>
+                    <NavLink className={({isActive}) => isActive ? 'text-green-500 font-semibold text-base' : 'font-medium text-base'} to='/about'>About</NavLink>
+                    {
+                        user && 
+                    <NavLink to='/saved' className={({isActive}) => isActive ? 'text-green-500 font-semibold text-base' : 'font-medium text-base'} >Saved</NavLink>
+                    }
                     {
                         user && 
                     <NavLink to='/updateprofile' className={({isActive}) => isActive ? 'text-green-500 font-semibold text-base' : 'font-medium text-base'} >Update Profile</NavLink>
@@ -45,7 +50,7 @@ const Header = () => {
                         </li>
                         <li  onClick={logOut}>
                         <a className="justify-between">
-                            LogOut
+                            Logout
                         </a>
                         </li>
                     </ul>

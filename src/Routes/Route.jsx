@@ -7,6 +7,8 @@ import Estatedetails from "../components/Estatedetails/Estatedetails";
 import PrivateRoute from './../components/PrivateRoute/PrivateRoute';
 import UpdateProfile from "../components/UpdateProfile/UpdateProfile";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
+import About from "../components/About/About";
+import Saved from "../components/Saved/Saved";
 
 const route = createBrowserRouter([
     {
@@ -25,6 +27,11 @@ const route = createBrowserRouter([
                 loader: () => fetch('/estate.json')
             },
             {
+                path: '/saved',
+                element : <PrivateRoute><Saved></Saved></PrivateRoute>,
+                loader: () => fetch('/estate.json')
+            },
+            {
                 path: '/updateprofile',
                 element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
             },
@@ -37,7 +44,8 @@ const route = createBrowserRouter([
                 element: <Login></Login>
             },
             {
-                
+                path: '/about',
+                element : <About></About>
             }
         ]
     }

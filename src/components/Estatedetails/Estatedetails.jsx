@@ -6,14 +6,17 @@ const Estatedetails = () => {
     const data = useLoaderData();
     const {id} = useParams();
     const details = data.find(item => item.id == id);
-    const {image,area,description,location,price,status,estate_title,facilities,agent,latLng} = details;
+    const {image,area,description,location,price,status,estate_title,facilities,agent,latLng,segment_name} = details;
     return (
         <div className="mx-12">
             <Helmet>
                 <title>Alex Estate | Estate-Details</title>
             </Helmet>
             <div>
+            <div className="flex items-center justify-between">
             <h3 className="text-5xl font-semibold">{estate_title}</h3>
+            <p className="text-3xl">{segment_name}</p>
+            </div>
             <div className="flex justify-between">
                 <div className="flex gap-2 items-center text-3xl mt-5">
                     <IoLocationSharp></IoLocationSharp>
@@ -32,13 +35,13 @@ const Estatedetails = () => {
                     <p className="text-lg font-medium">{description}</p>
                     <div className="border-t border-gray-300 mt-8">
                         <h3 className="my-5 text-3xl">Facilities Original Housing</h3>
-                        <div className="flex items-center">
+                        <div className="flex items-center gap-4">
                             {
                                 facilities.map((facility,idx) => {
-                                    return <p key={idx} className="border-r border-black px-3 text-lg">{facility}</p>
+                                    return <p key={idx} className="border-r border-black pr-3 text-lg">{facility}</p>
                                 })
                             }
-                        <p className="ml-3 text-lg">{area}</p>
+                        <p className=" text-lg">{area}</p>
                         </div>
                     </div>
                 </div>
