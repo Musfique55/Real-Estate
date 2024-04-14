@@ -27,7 +27,7 @@ const Estatecards = ({estate}) => {
             </div>
             <p className='text-base text-gray-600'>{description.slice(0,140)}</p>
             <div className="flex justify-between items-center">
-                <Link to={`/estate-details/${id}`} className='bg-green-600 text-white px-6 py-3 font-semibold rounded-lg'>View Property</Link>
+                <Link to={`/estate-details/${id}`} className='bg-[#CA9C6A] text-white px-6 py-3 font-semibold rounded-lg'>View Property</Link>
                 <p className='text-lg '>Price <span>${price}</span></p>
             </div>
         </div>

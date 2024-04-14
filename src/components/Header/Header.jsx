@@ -20,40 +20,40 @@ const Header = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3  p-2 shadow bg-base-100 rounded-box w-52 z-50">
-                        <NavLink to="/" className={({isActive}) => isActive ? 'text-[rgb(35,190,10)] font-semibold ' : 'text-[rgba(19,19,19,0.8)] font-normal'}>Home</NavLink>
-                        <NavLink to="/about" className={({isActive}) => isActive ? 'text-[rgb(35,190,10)] font-semibold ' : 'text-[rgba(19,19,19,0.8)] font-normal'}>About</NavLink>
+                        <NavLink to="/" className={({isActive}) => isActive ? 'text-[#CA9C6A] font-semibold ' : 'text-base font-medium'}>Home</NavLink>
                         {
-                        user && 
-                        <NavLink to='/saved' className={({isActive}) => isActive ? 'text-green-500 font-semibold text-base' : 'font-medium text-base'} >Saved</NavLink>
+                            user && 
+                            <NavLink to='/saved' className={({isActive}) => isActive ? 'text-[#CA9C6A] font-semibold text-base' : 'font-medium text-base'} >Saved</NavLink>
                         }
                         {
                             user && 
-                        <NavLink to='/updateprofile' className={({isActive}) => isActive ? 'text-green-500 font-semibold text-base' : 'font-medium text-base'} >Update Profile</NavLink>
+                            <NavLink to='/updateprofile' className={({isActive}) => isActive ? 'text-[#CA9C6A] font-semibold text-base' : 'font-medium text-base'} >Update Profile</NavLink>
                         }
                         {
                             !user &&
-                        <NavLink to='/register' className={({isActive}) => isActive ? 'text-green-500 font-semibold text-base' : 'font-medium text-base'} >Register</NavLink>
+                            <NavLink to='/register' className={({isActive}) => isActive ? 'text-[#CA9C6A] font-semibold text-base' : 'font-medium text-base'} >Register</NavLink>
                         }
+                        <NavLink to="/contact" className={({isActive}) => isActive ? 'text-[#CA9C6A] font-semibold ' : 'text-base font-medium'}>Contact</NavLink>
                     </ul>
                     </div>
                     <a className="btn btn-ghost text-[rgb(19,19,19)] font-bold text-3xl">Axel Estate</a>
                 </div>
                 <div className=" hidden lg:flex lg:flex-1 lg:justify-center lg:items-center">
                     <ul className="flex items-center justify-center flex-1 gap-4 text-base menu menu-horizontal px-1">
-                    <NavLink to="/" className={({isActive}) => isActive ? 'text-[rgb(35,190,10)] font-semibold' : 'text-[rgba(19,19,19,0.8)] font-normal'}>Home</NavLink>
-                        <NavLink to="/about" className={({isActive}) => isActive ? 'text-[rgb(35,190,10)] font-semibold ' : 'text-[rgba(19,19,19,0.8)] font-normal'}>About</NavLink>
+                    <NavLink to="/" className={({isActive}) => isActive ? 'text-[#CA9C6A] font-semibold' : 'text-base font-medium'}>Home</NavLink>
                         {
-                        user && 
-                        <NavLink to='/saved' className={({isActive}) => isActive ? 'text-green-500 font-semibold text-base' : 'font-medium text-base'} >Saved</NavLink>
+                            user && 
+                            <NavLink to='/saved' className={({isActive}) => isActive ? 'text-[#CA9C6A] font-semibold text-base' : 'font-medium text-base'} >Saved</NavLink>
                         }
                         {
                             user && 
-                        <NavLink to='/updateprofile' className={({isActive}) => isActive ? 'text-green-500 font-semibold text-base' : 'font-medium text-base'} >Update Profile</NavLink>
+                            <NavLink to='/updateprofile' className={({isActive}) => isActive ? 'text-[#CA9C6A] font-semibold text-base' : 'font-medium text-base'} >Update Profile</NavLink>
                         }
                         {
                             !user &&
-                        <NavLink to='/register' className={({isActive}) => isActive ? 'text-green-500 font-semibold text-base' : 'font-medium text-base'} >Register</NavLink>
+                            <NavLink to='/register' className={({isActive}) => isActive ? 'text-[#CA9C6A] font-semibold text-base' : 'font-medium text-base'} >Register</NavLink>
                         }
+                        <NavLink to="/contact" className={({isActive}) => isActive ? 'text-[#CA9C6A] font-semibold ' : 'text-base font-medium'}>Contact</NavLink>
                     </ul>
                 </div>
                 {  
@@ -78,7 +78,7 @@ const Header = () => {
                     </ul>
                     </div>
                 </div> : 
-                <Link className='bg-green-500 px-5 py-2 rounded-lg text-white font-semibold' to="/login">Login</Link>
+                <Link className='bg-[#CA9C6A] px-5 py-2 rounded-lg text-white font-semibold' to="/login">Login</Link>
                 }
             </div>
         </div>

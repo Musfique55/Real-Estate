@@ -33,7 +33,7 @@ const UpdateProfile = () => {
                         <label className="label">
                             <span className="label-text">Email</span>
                         </label>
-                        <input type="email" placeholder="Email" name='email' className="input input-bordered" defaultValue={user.email} required />
+                        <input type="email" placeholder="Email" name='email' className="input input-bordered" defaultValue={user.email} />
                         </div>
                         <div className="form-control">
                         <label className="label">

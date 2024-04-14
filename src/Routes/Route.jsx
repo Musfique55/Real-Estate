@@ -7,8 +7,8 @@ import Estatedetails from "../components/Estatedetails/Estatedetails";
 import PrivateRoute from './../components/PrivateRoute/PrivateRoute';
 import UpdateProfile from "../components/UpdateProfile/UpdateProfile";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
-import About from "../components/About/About";
 import Saved from "../components/Saved/Saved";
+import Contact from "../components/Contact/Contact";
 
 const route = createBrowserRouter([
     {
@@ -44,8 +44,8 @@ const route = createBrowserRouter([
                 element: <Login></Login>
             },
             {
-                path: '/about',
-                element : <About></About>
+                path: '/contact',
+                element : <Contact></Contact>
             }
         ]
     }

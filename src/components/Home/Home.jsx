@@ -16,6 +16,7 @@ import Stuffs from '../Stuffs/Stuffs';
 import { Helmet } from 'react-helmet';
 import Marquee from "react-fast-marquee";
 import Testimonial from './../Testimonial/Testimonial';
+import  CountUp  from 'react-countup';
 const Home = () => {
     const [estates,setEstates] = useState([]);
     const stuffs = useLoaderData();
@@ -50,17 +51,17 @@ const Home = () => {
                 <SwiperSlide className="slider-1 first-swiper-slider">
                         <h3 className=' text-5xl text-white'>Discover the Best Properties</h3>
                         <p className='text-white mt-5'>Discover a world of possibilities with our expert team of real estate professionals. Whether you{`'`}re buying, selling, or investing, we{`'`}re here to guide you every step of the way. Explore our vast portfolio of properties, from luxurious estates to cozy apartments, and find the perfect match for your lifestyle. With our commitment to excellence and personalized service, we{`'`}ll help you turn your real estate dreams into reality.</p>
-                        <button className='text-white font-semibold px-6 py-3 rounded-full bg-green-500 mt-5'>Get Started</button>
+                        <button className='text-white font-semibold px-6 py-3 rounded-full bg-[#CA9C6A] mt-5'>Get Started</button>
                 </SwiperSlide>
                 <SwiperSlide className="slider-2 first-swiper-slider">
                         <h3 className=' text-5xl text-white'>Discover the Best Properties</h3>
                         <p className='text-white mt-5'>Discover a world of possibilities with our expert team of real estate professionals. Whether you{`'`}re buying, selling, or investing, we{`'`}re here to guide you every step of the way. Explore our vast portfolio of properties, from luxurious estates to cozy apartments, and find the perfect match for your lifestyle. With our commitment to excellence and personalized service, we{`'`}ll help you turn your real estate dreams into reality.</p>
-                        <button className='text-white font-semibold px-6 py-3 rounded-full bg-green-500 mt-5'>Get Started</button>
+                        <button className='text-white font-semibold px-6 py-3 rounded-full bg-[#CA9C6A] mt-5'>Get Started</button>
                 </SwiperSlide>
                 <SwiperSlide className="slider-3 first-swiper-slider">
                         <h3 className=' text-5xl text-white'>Discover the Best Properties</h3>
                         <p className='text-white mt-5'>Discover a world of possibilities with our expert team of real estate professionals. Whether you{`'`}re buying, selling, or investing, we{`'`}re here to guide you every step of the way. Explore our vast portfolio of properties, from luxurious estates to cozy apartments, and find the perfect match for your lifestyle. With our commitment to excellence and personalized service, we{`'`}ll help you turn your real estate dreams into reality.</p>
-                        <button className='text-white font-semibold px-6 py-3 rounded-full bg-green-500 mt-5'>Get Started</button>
+                        <button className='text-white font-semibold px-6 py-3 rounded-full bg-[#CA9C6A] mt-5'>Get Started</button>
                 </SwiperSlide>
             </Swiper>
             </div>
@@ -75,6 +76,59 @@ const Home = () => {
                 }
                 </div>
             </div>
+            <div className="flex justify-around items-center bg-[#CA9C6A] px-12 py-16">
+      <div className="flex gap-3  items-center">
+        <CountUp
+          end={450}
+          duration={3}
+          suffix=" "
+          enableScrollSpy={true}
+          className="text-6xl text-white font-semibold"
+        ></CountUp>
+        <div>
+        <p className="font-extralight text-2xl text-[#1E1E1E]">SQUARE AREAS</p>
+        <p className="text-white font-extralight text-base">COMPLEX</p>
+        </div>
+      </div>
+      <div className="flex gap-3  items-center">
+        <CountUp
+          end={97}
+          duration={3}
+          suffix=" "
+          enableScrollSpy={true}
+          className="text-6xl text-white font-semibold"
+        ></CountUp>
+        <div>
+        <p className="font-extralight text-2xl text-[#1E1E1E]">HAPPY</p>
+        <p className="text-white font-extralight text-base">CLIENTS</p>
+        </div>
+      </div>
+      <div className="flex gap-3  items-center">
+        <CountUp
+          end={80}
+          duration={3}
+          enableScrollSpy={true}
+          className="text-6xl text-white font-semibold"
+        ></CountUp>
+        <div>
+        <p className="font-extralight text-2xl text-[#1E1E1E]">COMPLETED</p>
+        <p className="text-white font-extralight text-base">Projects</p>
+        </div>
+      </div>
+      <div className="flex gap-3  items-center">
+        <CountUp
+          end={40}
+          duration={3}
+          suffix=" "
+          enableScrollSpy={true}
+          className="text-6xl text-white font-semibold"
+        ></CountUp>
+        <div>
+        <p className="font-extralight text-2xl text-[#1E1E1E]">TEAM</p>
+        <p className="text-white font-extralight text-base">Members</p>
+        </div>
+      </div>
+    </div>
             <div >
                 <h5 className='text-center text-lg text-gray-500 mb-2 mt-16'>Meet</h5>
                 <h2 className='text-4xl font-semibold text-center mb-12'>Our Dynamic Agents</h2>
