@@ -8,7 +8,7 @@ const Estatedetails = () => {
     const details = data.find(item => item.id == id);
     const {image,area,description,location,price,status,estate_title,facilities,agent,latLng,segment_name} = details;
     return (
-        <div className="mx-12">
+        <div className="mx-5 md:mx-12 lg:mx-20">
             <Helmet>
                 <title>Alex Estate | Estate-Details</title>
             </Helmet>
@@ -17,19 +17,19 @@ const Estatedetails = () => {
             <h3 className="text-5xl font-semibold">{estate_title}</h3>
             <p className="text-3xl">{segment_name}</p>
             </div>
-            <div className="flex justify-between">
+            <div className="flex flex-col  md:justify-between md:flex-row  lg:justify-between lg:flex-row ">
                 <div className="flex gap-2 items-center text-3xl mt-5">
                     <IoLocationSharp></IoLocationSharp>
                     <p>{location}</p>
                 </div>
-                <div className="flex items-center gap-5">
+                <div className="flex items-center justify-between mt-5 md:mt-0 md:gap-5 lg:mt-0 lg:gap-5">
                     <p className="text-3xl font-semibold">${price}</p>
                     <span className='bg-green-500 px-3 py-1 text-white rounded-full font-semibold'>{status}</span>
                 </div>
             </div>
             <img src={image} alt="" className="w-full object-cover h-[500px] mt-10 rounded-xl"/>
             </div>
-            <div className="grid grid-cols-3 border-t mt-5 border-gray-300 gap-10">
+            <div className="grid grid-cols-2 border-t mt-5 border-gray-300 gap-10 md:grid-cols-3 lg:grid-cols-3">
                 <div className="col-span-2">
                     <h3 className="text-3xl my-5">Overview About House & Condition</h3>
                     <p className="text-lg font-medium">{description}</p>
@@ -45,7 +45,7 @@ const Estatedetails = () => {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className="col-span-2 md:col-span-1 lg:col-span-1">
                     {
                         agent.map((person,idx) => {
                             return(

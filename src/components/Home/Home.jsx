@@ -27,7 +27,7 @@ const Home = () => {
         })
     },[])
     return (
-        <div className='mx-12'>
+        <div className='mx-5 md:mx-12 lg:20'>
             <Helmet>
                 <title>Alex Estate | Home</title>
             </Helmet>
@@ -67,7 +67,7 @@ const Home = () => {
             <div className='my-12'>
                 <h5 className='text-center text-lg text-gray-500 mb-3'>Discover</h5>
                 <h3 className='text-5xl font-bold text-center mb-8'>Popular Estates</h3>
-                <div className='grid grid-cols-3 gap-6 mb-12'>
+                <div className='grid grid-cols-1 gap-6 mb-12 md:grid-cols-2 lg:grid-cols-3'>
                 {
                     estates.map(estate => {
                     return  <Estatecards key={estate.id} estate={estate}></Estatecards>
@@ -78,7 +78,7 @@ const Home = () => {
             <div >
                 <h5 className='text-center text-lg text-gray-500 mb-2 mt-16'>Meet</h5>
                 <h2 className='text-4xl font-semibold text-center mb-12'>Our Dynamic Agents</h2>
-                <div className='grid grid-cols-3 gap-y-10'>
+                <div className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3'>
                 {
                     stuffs.map((stuff,idx) => {
                        return  <Stuffs key={idx} stuff={stuff}></Stuffs>

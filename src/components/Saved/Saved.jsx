@@ -7,17 +7,17 @@ const Saved = () => {
     const savedItem = all.filter((item) => getSavedItem.includes(item.id));
 
     return (
-        <div className="mx-20">
+        <div className="mx-5 md:mx-12 lg:mx-20">
             {
                 savedItem.map((item,idx) => {
                     const {image,estate_title,location,area,price,facilities,status,id} = item;
                     return(
                         <div key={idx} className="mb-6">
-                            <div className="flex gap-10 border border-gray-300">
+                            <div className="flex flex-col gap-10 border border-gray-300 lg:flex-row">
                                 <div>
                                 <img src={image} alt="" className="w-[550px] h-auto object-cover"/>
                                 </div>
-                                <div className="space-y-5 p-10">
+                                <div className="space-y-5 p-10 flex flex-col flex-1">
                                     <h3 className="font-bold text-black text-2xl">{estate_title}</h3>
                                     <div className="flex gap-2 items-center text-lg">
                                     <IoLocationSharp></IoLocationSharp>   

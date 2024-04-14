@@ -16,7 +16,7 @@ const UpdateProfile = () => {
             <Helmet>
                 <title>Alex Estate | Update-Profile</title>
             </Helmet>
-            <div className="hero min-h-screen bg-base-200">
+            <div className="hero my-12 ">
                 <div className="hero-content flex-col">
                     <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">Update Profile</h1>
@@ -25,15 +25,15 @@ const UpdateProfile = () => {
                     <form className="card-body" onSubmit={handleSubmit}>
                         <div className="form-control">
                         <label className="label">
-                            <span className="label-text">Email</span>
-                        </label>
-                        <input type="email" placeholder="Name" name='email' className="input input-bordered" defaultValue={user.email} required />
-                        </div>
-                        <div className="form-control">
-                        <label className="label">
                             <span className="label-text">Name</span>
                         </label>
                         <input type="text" placeholder="Name" name='name' className="input input-bordered" defaultValue={user.displayName} required />
+                        </div>
+                        <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Email</span>
+                        </label>
+                        <input type="email" placeholder="Email" name='email' className="input input-bordered" defaultValue={user.email} required />
                         </div>
                         <div className="form-control">
                         <label className="label">
