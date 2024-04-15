@@ -6,7 +6,6 @@ import { FaRegHeart } from "react-icons/fa";
 import { setItem } from '../localStorage';
 const Estatecards = ({estate}) => {
     const {image,area,description,location,price,status,estate_title,id} = estate;
-    // console.log(estate);
     return (
         <div className='space-y-3 p-5 relative border border-gray-300 rounded-xl'>
             <img src={image} alt=""  className='w-full h-[289px] object-cover rounded-lg'/>

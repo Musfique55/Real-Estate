@@ -8,12 +8,12 @@ import { HelmetProvider } from 'react-helmet-async'
 import { ToastContainer } from 'react-toastify'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
     <HelmetProvider>
+  <React.StrictMode>
     <AuthProvider>
     <RouterProvider router={route}></RouterProvider>
     <ToastContainer></ToastContainer>
     </AuthProvider>
-    </HelmetProvider>
   </React.StrictMode>,
+    </HelmetProvider>
 )

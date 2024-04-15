@@ -10,7 +10,7 @@
       "area": "6000 sq ft",
       "location": "Malibu, California",
       "latLng" : [34.0259, -118.7798] , 
-      "facilities": ["infinity pool", "private beach access", "home theater"],
+      "facilities": ["Infinity pool", "Private beach access", "Home theater"],
       "agent" : [
         {
           "agent_name": "Emily Johnson",
@@ -29,7 +29,7 @@
       "status": "Sale",
       "area": "4000 sq ft",
       "location": "Manhattan, New York",
-      "facilities": ["rooftop terrace", "private elevator", "gourmet kitchen"],
+      "facilities": ["Rooftop terrace", "Private elevator", "Gourmet kitchen"],
       "latLng" : [40.7831,-73.9712],
       "agent" : [
         {
@@ -49,7 +49,7 @@
       "status": "Rent",
       "area": "10000 sq ft",
       "location": "Palm Beach, Florida",
-      "facilities": ["private dock", "infinity pool", "home gym"],
+      "facilities": ["Private dock", "Infinity pool", "Home gym"],
       "latLng" : [26.7056, -80.0364],
       "agent" : [
         {
@@ -69,7 +69,7 @@
       "status": "Sale",
       "area": "Entire Island",
       "location": "Maldives",
-      "facilities": ["private villas", "spa", "water sports"],
+      "facilities": ["Private villas", "Spa", "Water sports"],
       "latLng" : [3.2028,-73.2207],
       "agent" : [{
         "agent_name": "Jessica Martinez",
@@ -89,7 +89,7 @@
       "status": "Sale",
       "area": "100 acres",
       "location": "Swiss Alps",
-      "facilities": ["ski slopes", "luxury chalets", "fine dining"],
+      "facilities": ["Ski slopes", "Luxury chalets", "Fine dining"],
       "latLng" : [46.6056,-8.6376],
       "agent" : [{
         "agent_name": "Sarah Adams",
@@ -108,7 +108,7 @@
       "status": "Rent",
       "area": "Entire Island",
       "location": "Caribbean",
-      "facilities": ["luxury villas", "infinity pool", "private beach"],
+      "facilities": ["Luxury villas", "Infinity pool", "Private beach"],
       "latLng" : [12.1165,-68.9304],
       "agent" : [{
         "agent_name": "David Thompson",

@@ -1,4 +1,4 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import {  useLoaderData, useParams } from "react-router-dom";
 import { IoLocationSharp } from "react-icons/io5";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import { Helmet } from "react-helmet";

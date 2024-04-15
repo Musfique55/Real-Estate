@@ -1,4 +1,5 @@
 import {  MapContainer, Marker, TileLayer } from "react-leaflet";
+import { Helmet } from 'react-helmet';
 
 const Contact = () => {
     const location = [78.9629, -20.5937];
@@ -6,9 +7,12 @@ const Contact = () => {
         console.log(e.target);
     }
     return (
-        <div>
+        <div className="mx-5 md:mx-12 lg:mx-20">
+            <Helmet>
+                <title>Alex Estate | Contact</title>
+            </Helmet>
             <section className="py-6 dark:bg-gray-100 dark:text-gray-900">
-                <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
+                <div className="grid  grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
                     <div className="py-6 md:py-0 md:px-6">
                         <h1 className="text-4xl font-bold">Get in touch</h1>
                         <p className="pt-2 pb-4">Fill in the form to start a conversation</p>

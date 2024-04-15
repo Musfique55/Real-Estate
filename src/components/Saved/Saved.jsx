@@ -1,6 +1,7 @@
 import { Link, useLoaderData } from "react-router-dom";
 import { getItem } from "../localStorage";
 import { IoLocationSharp } from "react-icons/io5";
+import { Helmet } from "react-helmet";
 const Saved = () => {
     const getSavedItem = getItem();
     const all = useLoaderData();
@@ -8,6 +9,9 @@ const Saved = () => {
 
     return (
         <div className="mx-5 md:mx-12 lg:mx-20">
+            <Helmet>
+                <title>Alex Estate | Saved</title>
+            </Helmet>
             {
                 getSavedItem.length === 0 && <div className="flex items-center justify-center my-12">
                     <h2 className="text-3xl font-semibold">You don{`'`}t have any saved estates</h2>
@@ -20,7 +24,7 @@ const Saved = () => {
                         <div key={idx} className="mb-6">
                             <div className="flex flex-col gap-10 border border-gray-300 lg:flex-row">
                                 <div>
-                                <img src={image} alt="" className="w-[550px] h-auto object-cover"/>
+                                <img src={image} alt="" className="w-[550px] object-cover h-[355px]"/>
                                 </div>
                                 <div className="space-y-5 p-10 flex flex-col flex-1">
                                     <h3 className="font-bold text-black text-2xl">{estate_title}</h3>
