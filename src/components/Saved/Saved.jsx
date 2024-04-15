@@ -9,6 +9,11 @@ const Saved = () => {
     return (
         <div className="mx-5 md:mx-12 lg:mx-20">
             {
+                getSavedItem.length === 0 && <div className="flex items-center justify-center my-12">
+                    <h2 className="text-3xl font-semibold">You don{`'`}t have any saved estates</h2>
+                </div>
+            }
+            {
                 savedItem.map((item,idx) => {
                     const {image,estate_title,location,area,price,facilities,status,id} = item;
                     return(

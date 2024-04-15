@@ -1,7 +1,10 @@
-import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+import {  MapContainer, Marker, TileLayer } from "react-leaflet";
 
 const Contact = () => {
-    const location = [23.7897436, -90.3735254]
+    const location = [78.9629, -20.5937];
+    const handlelatlng = e => {
+        console.log(e.target);
+    }
     return (
         <div>
             <section className="py-6 dark:bg-gray-100 dark:text-gray-900">
@@ -49,15 +52,12 @@ const Contact = () => {
                 </div>
             </section>
             <hr className="mt-5 border-t border-gray-300"/>
-            <MapContainer center={location} zoom={13} scrollWheelZoom={false} className="mb-5">
+            <MapContainer center={location} zoom={13} scrollWheelZoom={false} className="mb-5" onClick={handlelatlng}>
                         <TileLayer
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         />
-                        <Marker position={location}>
-                        <Popup>
-                            A pretty CSS3 popup. <br /> Easily customizable.
-                        </Popup>
+                        <Marker position={location} >
                         </Marker>
             </MapContainer>            
         </div>
