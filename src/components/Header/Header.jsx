@@ -13,7 +13,7 @@ const Header = () => {
     }
     return (
         <div className='mx-5 py-7 md:mx-12 lg:mx-20'>
-            <div className="navbar">
+            <div className="navbar p-0">
                 <div className="flex justify-between flex-1  lg:flex-none lg:justify-start">
                     <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost pl-0 lg:hidden">
@@ -36,7 +36,7 @@ const Header = () => {
                         <NavLink to="/contact" className={({isActive}) => isActive ? 'text-[#CA9C6A] font-semibold ' : 'text-base font-medium'}>Contact</NavLink>
                     </ul>
                     </div>
-                    <a className="btn btn-ghost text-[rgb(19,19,19)] font-bold text-3xl">Axel Estate</a>
+                    <a className="btn btn-ghost text-[rgb(19,19,19)] font-bold text-3xl pl-0">Axel Estate</a>
                 </div>
                 <div className=" hidden lg:flex lg:flex-1 lg:justify-center lg:items-center">
                     <ul className="flex items-center justify-center flex-1 gap-4 text-base menu menu-horizontal px-1">

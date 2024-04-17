@@ -10,7 +10,7 @@ const UpdateProfile = () => {
         const url = e.target.photourl.value;
         updateUserProfile(name,url);
     }
-    updateUserProfile()
+    // updateUserProfile()
     return (
         <div>
             <Helmet>

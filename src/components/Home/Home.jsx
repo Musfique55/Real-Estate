@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 import client1 from '../../../public/client-1.png';
 import client2 from '../../../public/client-2.png';
 import client3 from '../../../public/client-3.png';
@@ -9,14 +9,15 @@ import client6 from '../../../public/client-6.png';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './../../index.css';
+import 'swiper/css/navigation';
 import { useEffect, useState } from 'react';
 import Estatecards from '../Estatecards/Estatecards';
 import { useLoaderData } from 'react-router-dom';
-import Stuffs from '../Stuffs/Stuffs';
 import { Helmet } from 'react-helmet';
 import Marquee from "react-fast-marquee";
 import Testimonial from './../Testimonial/Testimonial';
 import  CountUp  from 'react-countup';
+import Team from '../Team/Team';
 const Home = () => {
     const [estates,setEstates] = useState([]);
     const stuffs = useLoaderData();
@@ -40,35 +41,38 @@ const Home = () => {
                 centeredSlides={true}
                 slidesPerView={1}
                 loop={true}
+                navigation={true}
                 
                 autoplay = {{
                     delay :  2500,
-                    enable : true
+                    enable : true,
+                    disableOnInteraction : false
+                    
                 }}
-                modules={[Autoplay]}
+                modules={[Autoplay,Navigation]}
                 className="mySwiper"
             >
                 <SwiperSlide className="slider-1 first-swiper-slider">
                         <h3 className=' text-5xl text-white'>Discover the Best Properties</h3>
                         <p className='text-white mt-5'>Discover a world of possibilities with our expert team of real estate professionals. Whether you{`'`}re buying, selling, or investing, we{`'`}re here to guide you every step of the way. Explore our vast portfolio of properties, from luxurious estates to cozy apartments, and find the perfect match for your lifestyle. With our commitment to excellence and personalized service, we{`'`}ll help you turn your real estate dreams into reality.</p>
-                        <button className='text-white font-semibold px-6 py-3 rounded-full bg-[#CA9C6A] mt-5'>Get Started</button>
+                        <a href='#estates' className='text-white font-semibold px-6 py-3 rounded-full bg-[#CA9C6A] mt-5'>Get Started</a>
                 </SwiperSlide>
                 <SwiperSlide className="slider-2 first-swiper-slider">
                         <h3 className=' text-5xl text-white'>Discover the Best Properties</h3>
                         <p className='text-white mt-5'>Discover a world of possibilities with our expert team of real estate professionals. Whether you{`'`}re buying, selling, or investing, we{`'`}re here to guide you every step of the way. Explore our vast portfolio of properties, from luxurious estates to cozy apartments, and find the perfect match for your lifestyle. With our commitment to excellence and personalized service, we{`'`}ll help you turn your real estate dreams into reality.</p>
-                        <button className='text-white font-semibold px-6 py-3 rounded-full bg-[#CA9C6A] mt-5'>Get Started</button>
+                        <a href='#estates' className='text-white font-semibold px-6 py-3 rounded-full bg-[#CA9C6A] mt-5'>Get Started</a>
                 </SwiperSlide>
                 <SwiperSlide className="slider-3 first-swiper-slider">
                         <h3 className=' text-5xl text-white'>Discover the Best Properties</h3>
                         <p className='text-white mt-5'>Discover a world of possibilities with our expert team of real estate professionals. Whether you{`'`}re buying, selling, or investing, we{`'`}re here to guide you every step of the way. Explore our vast portfolio of properties, from luxurious estates to cozy apartments, and find the perfect match for your lifestyle. With our commitment to excellence and personalized service, we{`'`}ll help you turn your real estate dreams into reality.</p>
-                        <button className='text-white font-semibold px-6 py-3 rounded-full bg-[#CA9C6A] mt-5'>Get Started</button>
+                        <a href='#estates' className='text-white font-semibold px-6 py-3 rounded-full bg-[#CA9C6A] mt-5'>Get Started</a>
                 </SwiperSlide>
             </Swiper>
             </div>
             <div className='my-12'>
                 <h5 className='text-center text-lg text-gray-500 mb-3'>Discover</h5>
                 <h3 className='text-5xl font-bold text-center mb-8'>Popular Estates</h3>
-                <div className='grid grid-cols-1 gap-6 mb-12 md:grid-cols-2 lg:grid-cols-3'>
+                <div className='grid grid-cols-1 gap-6 mb-12 md:grid-cols-2 lg:grid-cols-3' id='estates'>
                 {
                     estates.map(estate => {
                     return  <Estatecards key={estate.id} estate={estate}></Estatecards>
@@ -135,7 +139,7 @@ const Home = () => {
                 <div className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3'>
                 {
                     stuffs.map((stuff,idx) => {
-                       return  <Stuffs key={idx} stuff={stuff}></Stuffs>
+                       return <Team key={idx} stuff={stuff}></Team>
                     })
                 }
                 </div>
@@ -153,6 +157,7 @@ const Home = () => {
             <div>
                 <Testimonial></Testimonial>
             </div>
+            {/* <Team></Team> */}
         </div>
     );
 };

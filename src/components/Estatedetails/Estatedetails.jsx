@@ -14,7 +14,7 @@ const Estatedetails = () => {
             </Helmet>
             <div>
             <div className="flex items-center justify-between">
-            <h3 className="text-5xl font-semibold">{estate_title}</h3>
+            <h3 className="text-4xl font-semibold">{estate_title}</h3>
             <p className="text-3xl">{segment_name}</p>
             </div>
             <div className="flex flex-col  md:justify-between md:flex-row  lg:justify-between lg:flex-row ">

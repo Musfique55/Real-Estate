@@ -4,8 +4,8 @@ import { AuthContext } from "../AuthProvider/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { ToastContainer, toast } from "react-toastify";
 import { Helmet } from "react-helmet";
+import toast, { Toaster } from "react-hot-toast";
 
 const Login = () => {
     const {loginUser,googleLogin,githubLogin} =  useContext(AuthContext);
@@ -41,7 +41,8 @@ const Login = () => {
         
     const handleGithubLogin = () => {
         githubLogin()
-        .then(() => {
+        .then((res) => {
+            console.log(res.user);
             toast.success('Logged in Successfully');
             navigate(location?.state ? location.state : '/');
         })
@@ -99,7 +100,7 @@ const Login = () => {
                          </div>
                     </div>
                 </div>
-                <ToastContainer></ToastContainer>
+                <Toaster></Toaster>
             </div>
         </div>
     );
