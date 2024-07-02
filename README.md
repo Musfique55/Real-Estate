@@ -18,8 +18,8 @@
 - [React-Hot-Toast](https://react-hot-toast.com/)
 - [Tailwind-Css](https://tailwindcss.com/)
 - [Daisy-Ui](https://daisyui.com/)
-
-# Npm Packages used for Challenges
 - [React-Hook-Form](https://react-hook-form.com/)
 - [React-Leaflet](https://react-leaflet.js.org/)
 - [Swiper-JS](https://swiperjs.com/)
+
+## If you want to run this in local computer simply just clone the repository and paste the following command in client side code **npm i**  then you can run it
